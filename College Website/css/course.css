@@ -1,9 +1,12 @@
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 }
 
 h1 {
-  background-color: #242f40;
+  width: 100%;
+  text-align: center;
+  background-color: #0056b3;
   color: wheat;
   margin: auto;
   margin: -15px;
@@ -11,9 +14,15 @@ h1 {
 }
 
 #description {
-  background-color: #cca43b;
+  /* background-color: #e5e5e5; */
   margin: -15px;
   padding: 15px 25px;
+}
+
+h2 {
+  color: #0056b3;
+  text-transform: uppercase;
+  font-size: 1.8rem;
 }
 
 #teachers {
@@ -22,9 +31,36 @@ h1 {
   padding: 15px 25px;
 }
 
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.15); */
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
 #course_timings {
   border-collapse: collapse;
   border: solid 1px;
+}
+
+#timetable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 
 .table-row {
@@ -34,11 +70,22 @@ h1 {
 
 th {
   padding: 10px;
-  background-color: #363636;
+  background-color: #0056b3;
   color: white;
 }
 
 td {
   padding: 10px;
   border: solid 1px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  padding: 2px;
+  margin-top: 10px;
+  color: white;
+  font-size: small;
 }
